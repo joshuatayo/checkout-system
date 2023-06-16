@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout System</title>
+		<style>
+			table {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+			}
+			
+			td, th {
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 8px;
+			}
+			
+			tr:nth-child(even) {
+			  	background-color: #dddddd;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h1>Checkout System</h1>
+		<h3>Item Table</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>SKU(Item)</th>
+					<th>Price</th>
+					<th>Special Price</th>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody id="itemTableBody"></tbody>
+		</table>
+
+		<h3>Cart Table</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>SKU(Item)</th>
+					<th>Qty</th>
+					<th>Price (pence)</th>
+				</tr>
+			</thead>
+			<tbody id="cartTableBody"></tbody>
+			<tbody>
+				<tr>
+					<th></th>
+					<th>Total Amount</th>
+					<th id="totalAmount">£0.0</th>
+				</tr>
+			</tbody>
+		</table>
+	
+		<script src="./checkout.js"></script>
+		<script>
+			// Create an instance of the ShoppingCart class
+			const checkout = new Checkout();
+
+			// Call the method to populate the table
+			checkout.populateItemTable();
+		</script>
+	</body>
+</html>
+
