@@ -2,13 +2,17 @@
 
 ## Table of Contents
 
+- [Time Spent](#time-spent)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the System](#running-the-system)
 - [Testing the System](#testing-the-system)
 - [Technologies Used](#technologies-Used)
-- [Key decisions I made](#key-decisions-i-made)
-- [What I did do if I had more time](#what-i-did-do-if-i-had-more-time)
+- [Key decisions](#key-decisions)
+- [if given more time](#if-given-more-time)
+
+## Time Spent
+Approximate time spent on the Assessment: 1 hours 15 minute
 
 ## Prerequisites
 To run and test the checkout system, make sure you have the following prerequisites installed on your machine:
@@ -64,7 +68,7 @@ npm test
 - Jest (for testing)
 
 
-## Key decisions I made
+## Key decisions 
 
 1. I structured the code using a class-based approach to encapsulate the functionality of the checkout system.
 2. I chose to represent the pricing rules using an object where each item (A, B, C, D) is a key, and the corresponding value is an object containing the price and special price information if applicable. This allows for easy access and retrieval of pricing information based on the item.
@@ -73,7 +77,7 @@ npm test
 5. I chose to enhanced the system by adding tests using the Jest testing framework. Testing ensures that the code methods as expected and helps catch potential bugs or regressions. 
 6. I chose to using Jest because t provides a simple and powerful testing framework for JavaScript applications, allowing you to write unit tests for individual components and methods.
 
-## What I did do if I had more time
+## if given more time
 
 1. Implementing unit tests to test the item table and cart table which is dynamically render to ensure the correctness of the checkout system.
 2. Implementing additional features like removing items from the cart or updating the quantity of items directly from the cart table.
